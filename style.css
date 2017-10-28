@@ -1,0 +1,87 @@
+:root {
+  --navbar-bg-color: #1f1f2e;
+  --navbar-hl-color: #666699;
+}
+
+/* NAV BAR CSS */
+
+.navbar-custom {
+	background-color: var(--navbar-bg-color);
+    color:#ffffff;
+  	border-radius:0;
+    min-height:auto;
+  	padding-left:50px;
+  	padding-right:50px;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+  	padding-left:20px;
+  	padding-right:20px;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover{
+    color: #ffffe6;
+	background-color: var(--navbar-bg-color);
+}
+
+.navbar-nav > .active > a:focus {
+    color: #fffdd0;
+	background-color:transparent;
+}
+
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: var(--navbar-hl-color);
+}
+      
+.navbar-custom .navbar-brand {
+   color:#eeeeee;
+}
+
+.navbar-custom .navbar-toggle,
+.navbar-custom .nav .open>a, .navbar-custom .nav .open>a:hover, .navbar-custom .nav .open>a:focus {
+   background-color:transparent;
+}
+
+.navbar-custom .icon-bar {
+   border: 1px solid #fff;                
+}
+
+.navbar-custom .navbar-nav .open .dropdown-menu>li>a,.navbar-custom .navbar-nav .open .dropdown-menu {
+    color:#428bca;
+}
+
+/* BODY CSS */
+
+body{
+	font-family: tahoma;
+	background: #f4f4f9;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h3 {
+	font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+p, li, ul {
+    font-size: 15px;
+}
+
+.text{
+	font-family: tahoma;
+	width:75%;
+	margin:0 auto;
+  	padding-left:50px;
+  	padding-right:50px;
+    padding-top:10px;
+    padding-bottom:10px;
+	background: #ffffff
+}
