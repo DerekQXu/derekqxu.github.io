@@ -75,6 +75,12 @@ p, li, ul {
     font-size: 15px;
 }
 
+th {
+    display: table-cell;
+    font-weight: normal;
+    text-align: left;
+}
+
 .text{
 	font-family: tahoma;
 	width:75%;
