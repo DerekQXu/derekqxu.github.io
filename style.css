@@ -91,3 +91,11 @@ th {
     padding-bottom:10px;
 	background: #ffffff
 }
+
+.content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width:600px;
+}
+
