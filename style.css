@@ -1,101 +1,92 @@
 :root {
-  --navbar-bg-color: #1f1f2e;
-  --navbar-hl-color: #666699;
+    --navbar-bg: #1f1f2e;
+    --navbar-bg-sel: #322F55;
+    --navbar-txt: #fff;
+    --navbar-txt-sel: #ffffe6;
 }
 
 /* NAV BAR CSS */
-
 .navbar-custom {
-	background-color: var(--navbar-bg-color);
-    color:#ffffff;
-  	border-radius:0;
+    background-color: var(--navbar-bg);
+    color: var(--navbar-txt);
+    border-radius:0;
     min-height:auto;
-  	padding-left:50px;
-  	padding-right:50px;
+    padding-left:50px;
+    padding-right:50px;
 }
-  
+
+.navbar-custom .navbar-brand {
+    font-family: Verdana;
+    color: var(--navbar-txt);
+    padding-left:0px;
+}
 .navbar-custom .navbar-nav > li > a {
-  	color:#fff;
-  	padding-left:20px;
-  	padding-right:20px;
+    color: var(--navbar-txt);
+    padding-left:15px;
+    padding-right:15px;
+}
+.navbar-custom .navbar-nav .open .dropdown-menu>li>a,.navbar-custom .navbar-nav .open .dropdown-menu {
+    color: var(--navbar-txt);
+    background-color: var(--navbar-bg-sel);
+}
+.navbar-custom .icon-bar {
+    border: 1px solid var(--navbar-txt);              
 }
 
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover{
-    color: #ffffe6;
-	background-color: var(--navbar-bg-color);
+    color: var(--navbar-txt-sel);
+    background-color: var(--navbar-bg-sel);
 }
-
-.navbar-nav > .active > a:focus {
-    color: #fffdd0;
-	background-color:transparent;
-}
-
 .nav > li > a:focus {
-    text-decoration: none;
-    background-color: var(--navbar-hl-color);
+    background-color: var(--navbar-bg);
 }
-      
-.navbar-custom .navbar-brand {
-   color:#eeeeee;
-}
-
 .navbar-custom .navbar-toggle,
 .navbar-custom .nav .open>a, .navbar-custom .nav .open>a:hover, .navbar-custom .nav .open>a:focus {
-   background-color:transparent;
+    background-color: var(--navbar-bg);
 }
 
-.navbar-custom .icon-bar {
-   border: 1px solid #fff;                
-}
-
-.navbar-custom .navbar-nav .open .dropdown-menu>li>a,.navbar-custom .navbar-nav .open .dropdown-menu {
-    color:#428bca;
-}
-
-/* BODY CSS */
-
+/* TEXT CSS */
 body{
-	font-family: tahoma;
-	background: #f4f4f9;
+    font-family: Verdana;
+    background: #f4f4f9;
 }
-
-h1 {
+h1{
     font-weight: bold;
     font-size: 25px;
 }
-
-h3 {
-	font-size: 20px;
+h2{
+    font-size: 20px;
     text-align: justify;
     text-justify: inter-word;
 }
-
-p, li, ul {
-    font-size: 15px;
+h3{
+    font-size: 17px;
+    line-height: 24px;
+    text-align: justify;
+    text-justify: inter-word;	
 }
-
-th {
-    display: table-cell;
-    font-weight: normal;
-    text-align: left;
+p, li, ul{
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;	
 }
 
 .text{
-	font-family: tahoma;
-	width:75%;
-	margin:0 auto;
-  	padding-left:50px;
-  	padding-right:50px;
+    font-family: Verdana;
+    width:75%;
+    margin:0 auto;
+    padding-left:50px;
+    padding-right:50px;
     padding-top:10px;
     padding-bottom:10px;
-	background: #ffffff
+    background: #ffffff
 }
 
+/* EXTRA CSS */
 .content {
     position: relative;
     width: 100%;
     height: auto;
     max-width:600px;
 }
-
