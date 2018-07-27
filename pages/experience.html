@@ -1,0 +1,184 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=0.7">
+        <!-- CSS stuff -->  <style>
+	/* Remove the navbar's default margin-bottom and rounded borders */ 
+	.navbar {
+		margin-bottom: 0;
+		border-radius: 0;
+	}
+	
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 140%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+        .sidenav {
+            height: auto;
+            padding: 15px;
+        }
+        .row.content {height:auto;} 
+    }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">Derek Xu</a>
+                    <button type="button" class="navbar-toggle" data-target="#myNav" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNav">
+                    <ul class="nav navbar-nav mn_primary_menu">
+                        <li><a href="https://www.github.com/DerekQXu">Github</a></li>
+                        <li class="dropdown mn_dropdown_menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                                                                                     area-expanded="false">Projects <span class = "caret"></span></a>
+                            <ul class="dropdown-menu">
+								<li><a href="https://github.com/DerekQXu/Real_Time_Motion_Detection_with_ML_and_BLE">
+                                        BLE Machine Learning System</a></li>
+								<li><a href="https://github.com/DerekQXu/Chat_App">
+                                        Chatting Application</a></li>
+                                <li><a href="https://www.github.com/DerekQXu/Gaze_Detection_with_OpenCV">
+                                        Pupil Detection</a></li>
+                                <li><a href="https://www.github.com/DerekQXu/16x16_MicroMouse_Simulator">
+                                        Micromouse Simulator</a></li>
+                                <li><a href="http://electronics-shop.pa.ucla.edu">
+                                        Ion-trapping Machine (UCLA eShop)</a></li>
+                                <li><a href="http://iot.seas.ucla.edu/UCLA-STMicro/index.php/Home">
+                                        BlueTooth LE with STMicro and BeagleBone</a></li>
+                                <li><a href="https://www.github.com/DerekQXu/EE3-Project-NATCAR-">
+                                        R.A.T. and NATCAR (IEEE)</a></li>
+                                <li><a href="https://www.github.com/DerekQXu/Scheduler">Terminal Schedular</a></li>
+                                <li><a href="#">
+                                        WiFi Localization with ML</a></li>
+                                <li><a href="http://electronics-shop.pa.ucla.edu">
+                                        Custom Variable HVPS (UCLA eShop)</a></li>
+                                <li><a href="https://www.github.com/DerekQXu/CCD_Correction">
+                                        CCD Correction Software</a></li>
+                                <li><a href="https://www.github.com/DerekQXu/Edge-Detection_using_Lateral-Inhibition">
+                                        Edge Detection with Lateral Inhibition</a></li>
+                                <li><a href="https://www.github.com/DerekQXu/Conways_Game_of_Life">
+                                        Conway's Game of Life</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=".\experience.html">Resume</a></li>
+                        <li><a href=".\contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid text-center">    
+            <div class="col-sm-2 sidenav">
+            </div>
+            <div class="col-sm-8 text-left">
+			<h3>
+			Education
+			</h3>
+			<h4>
+			B.S. Computer Science and Engineering (GPA: 3.81)
+			</h4>
+            <h3>
+            Work Experience
+            </h3>
+            <h4>
+            NASA Jet Propulsion Laboratory
+            </h4>
+			<p>
+			TBD.
+			</p>			
+            <h4>
+            UCLA eShop
+            </h4>
+			<p>
+			Develop firmware, drivers, and embedded software for physics electronics (ex/ HVPS, ion-trapper, etc.).
+			Created and printed simple PCB's on Altium. Assembled boards (soldering + mechanical work).
+			</p>
+            <h4>
+            UCLA Mentoring (E96C: IoT Seminar)
+            </h4>
+			<p>
+			Mentored undergraduate seminar on embedded sensors, signal processing, and machine learning.
+			</p>
+            <h3>
+               Research
+            </h3>
+            <h4>
+            ML Motion Recognition System
+			</h4>
+			<p>
+			Implemented system to train and detect motion gestures, in real time, on embedded platform across BLE
+			connection. Developed novel training methodology, and implemented Keras CNN+LSTM models for training.
+			</p>
+			<h4>
+            BLE Communication
+			</h4>
+			<p>
+			Tested BLE Communication between new embedded systems
+			</p>
+			<h4>
+            Indoor WiFi Localization
+			</h4>
+			<p>
+			Trained and tested neural net to detect location using WiFi signal strength. Used FANN C library for
+			model. Automated training and testing.
+			</p>
+            <h3>
+                Awards and Honors
+            </h3>
+            <h4>
+            IEEE Internal Micromouse Competition
+            </h4>
+			<p>
+			1st place - Fall 2017
+			</p>
+            <h4>
+            IEEE Internal O.P.S. Competition
+            </h4>
+			<p>
+			3rd place - Spring 2017
+			</p>
+            <h4>
+            HKN, UPE Honor Societies
+            </h4>
+			<p>
+			Member
+			</p>
+            </div>
+            <div class="col-sm-2 sidenav">
+            </div>
+        </div>
+
+    </body>
+</html>
