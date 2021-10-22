@@ -1,141 +1,212 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Strata by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/propic.jpg" alt="" /></a>
+					<h2>Derek Qiang Xu</h2>
+					<h4>Compute Science Ph.D. Student</h4>
+					<h5>University of California, Los Angeles</h5>
+				</div>
+			</header>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Main -->
+			<div id="main">
 
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>About Me</h2>
+						</header>
+						<p>Hi! My name is Derek.
+							I am currently as second-year Ph.D. student at the
+							University of California, Los Angeles (UCLA). My
+							advisors are Prof. <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a> and Prof. <a href="http://web.cs.ucla.edu/~weiwang/">Wei Wang</a>.
+							<br><br>
+							I am interested in machine learning and data mining on graphs,
+							particularly <i>graph representation learning</i>,
+							<i>generative modeling</i>, and <i>combinatorial search</i>.
+							If you are also interested in any of these topics and
+							wish to talk, please reach out to me!
+						</p>
+<!--						<ul class="actions">-->
+<!--							<li><a href="#" class="button">Learn More</a></li>-->
+<!--						</ul>-->
+					</section>
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=0.7">
-        <!-- CSS stuff -->  <style>
-	/* Remove the navbar's default margin-bottom and rounded borders */ 
-	.navbar {
-		margin-bottom: 0;
-		border-radius: 0;
-	}
-	
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+				<!-- Two -->
+					<section id="two">
+						<h2>Selected Projects</h2>
+						<div class="row">
+							<article class="work-item">
+								<h3>GLSearch: Unsupervised Maximum Common Subgraph Detection</h3>
+								<a href="images/glsearch.png"><img src="images/glsearch.png" alt="" /></a>
+								<p>
+								We propose GLSEARCH, a Graph Neural Net-
+								work (GNN) based learning to search model. Our
+								model is built upon the branch and bound algo-
+								rithm, which selects one pair of nodes from the
+								two input graphs to expand at a time. Instead of
+								using heuristics, we propose a novel GNN-based
+								Deep Q-Network (DQN), which leverages search
+								information and graph coarsening, to select the node pair,
+								making the search process faster and more adaptive.
+								We also leverage the search process to provide
+								supervision in a pre-training and imitation learning.
+								</p>
+								<p><i>Bai, Y.*, Xu, D.*, Sun, Y., & Wang, W. (2021, July). GLSearch: Maximum Common Subgraph Detection via Learning to Search. In International Conference on Machine Learning (pp. 588-598). PMLR.</i> <a href="https://arxiv.org/abs/2002.03129">[paper link]</a></p>
+							</article>
+							<article class="work-item">
+								<h3>NeuralMCS: Supervised Maximum Common Subgraph Detection</h3>
+								<a href="images/neuralmcs.png"><img src="images/neuralmcs.png" alt="" /></a>
+								<p>
+								We propose an efficient MCS detection algorithm, NeuralMCS,
+								consisting of a novel neural network model that learns the
+								node-node correspondence from the ground-truth MCS result,
+								and a subgraph extraction procedure that uses the neural
+								network output as guidance for final MCS prediction, with
+								a hierarchical loss function capturing equivalent ground
+								truths at different granularities.
+								</p>
+								<p><i>Bai, Y.*, Xu, D.*, Gu, K., Wu, X., Marinovic, A., Ro, C., Sun, Y., & Wang, W. (2019). Neural maximum common subgraph detection with guided subgraph extraction. <a href="https://arxiv.org/abs/2002.03129">[paper link]</a></i></p>
+							</article>
+							<article class="work-item">
+								<h3>Embedded Machine Learning on STM Sensortile</h3>
+								<a href="images/stm.png"><img src="images/stm.png" alt="" /></a>
+								<p>I designed and implemented a real-time motion recognition
+								system using CNNs and LSTMs to classify 9DOF signals, with
+								heavy data augmentation through additive Gaussian noise and
+								signal shifting. The system used BLE communication to relay
+								sensor data to compute resources, and digital signal
+								processing via band-pass filtering and boxcar smoothing to
+								clean raw data.</p>
+								<p><a href="https://sites.google.com/view/ucla-stmicroelectronics-iot/home">[Tutorials link]</a><a href="https://github.com/DerekQXu/General_Motion_Classifier_ML">[GitHub link]</a></p>
+							</article>
+						</div>
+					</section>
 
-    /* Set gray background color and 100% height */
-    .sidenav {
-        padding-top: 20px;
-        background-color: #f1f1f1;
-        height: 170%;
-    }
+				<!-- Two -->
+					<section id="three">
+						<h2>Work Experience</h2>
+						<div class="row">
+							<article class="work-item">
+								<h3>Uber Technologies (Summer 2021)</h3>
+								<h4>Machine Learning Engineering Intern</h4>
+								<p>I worked on an information theoretic approach to AutoML, and implemented a functioning highly-scalable model and feature selection system that identified optimal geospatial features for production.</p>
+							</article>
+							<article class="work-item">
+								<h3>Uber Technologies (Summer 2020)</h3>
+								<h4>Software Engineering Intern</h4>
+								<p>I analyzed pricing policies with the data science team and implemented a new end-to-end product in Python, Java, Go, JS, and SQL.</p>
+							</article>
+							<article class="work-item">
+								<h3>NASA Jet Propulsion Laboratory (Summer 2019)</h3>
+								<h4>Software Engineering Intern</h4>
+								<p>I designed and developed a new programming language for compiling and verifying sattelite command files then ingesting them into a database.</p>
+							</article>
+							<article class="work-item">
+								<h3>NASA Jet Propulsion Laboratory (Summer 2018)</h3>
+								<h4>Software Engineering Intern</h4>
+								<p>I developed a reverse data compilation engine to verify data packets between mission control and satellites.</p>
+							</article>
+						</div>
+					</section>
 
+				<!-- Two -->
+					<section id="four">
+						<h2>Teaching Experience</h2>
+						<div class="row">
+							<article class="work-item">
+								<h3>CS30: Introduction to Computer Science (Summer 2021)</h3>
+								<p>I set up the final project, a coding competition, covering various search algorithms: BFS, DFS, Best-First Search, Djikstra's, and A*.</p>
+							</article>
+							<article class="work-item">
+								<h3>E96C: Introduction to Engineering Design (2017-2020)</h3>
+								<p>I helped debug software and hardware errors for students developing an embedded machine learning motion recognition system.</p>
+							</article>
+						</div>
+					</section>
 
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-        .sidenav {
-            height: auto;
-            padding: 15px;
-        }
-        .row.content {height:auto;} 
-    }
-        </style>
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#top">Derek Xu</a>
-                    <button type="button" class="navbar-toggle" data-target="#myNav" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNav">
-                    <ul class="nav navbar-nav mn_primary_menu">
-                        <li><a href="https://www.github.com/DerekQXu">Github</a></li>
-                        <li class="dropdown mn_dropdown_menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                                                                                     area-expanded="false">Projects <span class = "caret"></span></a>
-                            <ul class="dropdown-menu">
-								<li><a href="https://github.com/DerekQXu/Real_Time_Motion_Detection_with_ML_and_BLE">
-                                        BLE Machine Learning System</a></li>
-								<li><a href="https://github.com/DerekQXu/Chat_App">
-                                        Chatting Application</a></li>
-                                <li><a href="https://www.github.com/DerekQXu/Gaze_Detection_with_OpenCV">
-                                        Pupil Detection</a></li>
-                                <li><a href="https://www.github.com/DerekQXu/16x16_MicroMouse_Simulator">
-                                        Micromouse Simulator</a></li>
-                                <li><a href="http://electronics-shop.pa.ucla.edu">
-                                        Ion-trapping Machine (UCLA eShop)</a></li>
-                                <li><a href="http://iot.seas.ucla.edu/UCLA-STMicro/index.php/Home">
-                                        BlueTooth LE with STMicro and BeagleBone</a></li>
-                                <li><a href="https://www.github.com/DerekQXu/EE3-Project-NATCAR-">
-                                        R.A.T. and NATCAR (IEEE)</a></li>
-                                <li><a href="https://www.github.com/DerekQXu/Scheduler">Terminal Schedular</a></li>
-                                <li><a href="#">
-                                        WiFi Localization with ML</a></li>
-                                <li><a href="http://electronics-shop.pa.ucla.edu">
-                                        Custom Variable HVPS (UCLA eShop)</a></li>
-                                <li><a href="https://www.github.com/DerekQXu/CCD_Correction">
-                                        CCD Correction Software</a></li>
-                                <li><a href="https://www.github.com/DerekQXu/Edge-Detection_using_Lateral-Inhibition">
-                                        Edge Detection with Lateral Inhibition</a></li>
-                                <li><a href="https://www.github.com/DerekQXu/Conways_Game_of_Life">
-                                        Conway's Game of Life</a></li>
-                            </ul>
-                        </li>
-                        <li><a href=".\pages\experience.html">Resume</a></li>
-                        <li><a href=".\pages\contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+				<!-- Two -->
+					<section id="five">
+						<h2>Honors and Awards</h2>
+						<ul>
+							<li>NRT MENTOR Fellowship</li>
+							<li>KDD Student Travel Award</li>
+							<li>Kenneth I. Friedman Endowed Scholarship</li>
+							<li>NSF REU Program</li>
+							<li>1st Place UCLA Micromouse Internal</li>
+							<li>UPE and HKN Honor Societies</li>
+						</ul>
+					</section>
 
-        <div class="container-fluid text-center">    
-            <div class="col-sm-2 sidenav">
-            </div>
-            <div class="col-sm-8 text-left"> 
-                    <h1>
-                        About.Me
-                    </h1>
-                    <h4>
-                        (This website is currently under maitenance) I am currently a 3rd year student at UCLA studying Computer
-                        Science and Engineering. I am interested in machine
-                        learning, signal processing, and  data mining.
-                        <br><br>
-                        I enjoy making cool software and hardware projects using novel technologies.
-                        <br><br>
-                        In my free time, I enjoy playing jazz guitar and hiking. :)
-						<br>
-                    </h4>
-					<img src="image.png" title="Smart Watch Project from IDEA Hacks 2017"  alt="(Portable) Smart Watch from IDEA Hacks", width="795", height="320">
-                    <br>
-                    <h2> Languges </h2>
-                    <h4>
-                        Python, C, C++, BASH/Expect, Javascript, Java, HTML/CSS, SQL
-                    </h4>
-                    <h2> Libraries </h2>
-                    <h4>
-                        Keras, Tensorflow, FANN, OpenCV, Bluetoothctl, LiquidDSP
-                    </h4>
-                    <h2> Frameworks </h2>
-                    <h4>
-                        NodeJS, Express, React, Mongodb/mongoose
-                    </h4>
-                    <h2> Tools </h2>
-                    <h4>
-                        Git, Linux/Unix, Vim, Shell-Scripting
-                    </h4>
-                    <h2> Hardware </h2>
-                    <h4>
-                        EAGLE/Altium, Embedded/MCU, Firmware, Control (PID, etc.), DSP filters
-                    </h4>
-            </div>
-            <div class="col-sm-2 sidenav">
-            </div>
-        </div>
+				<!-- Three -->
+					<section id="six">
+						<h2>Contact</h2>
+						<div class="row">
+<!--							<div class="col-8 col-12-small">-->
+<!--								<form method="post" action="#">-->
+<!--									<div class="row gtr-uniform gtr-50">-->
+<!--										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>-->
+<!--										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>-->
+<!--										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>-->
+<!--									</div>-->
+<!--								</form>-->
+<!--								<ul class="actions">-->
+<!--									<li><input type="submit" value="Send Message" /></li>-->
+<!--								</ul>-->
+<!--							</div>-->
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										3551 Boelter Hall, UCLA, CA, 90095 (ScAI lab)
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="#">derekqxu@g.ucla.edu</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+			</div>
 
-    </body>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+<!--						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
+						<li><a href="https://github.com/DerekQXu" class="icon brands fa-github"><span class="label">Github</span></a></li>
+<!--						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>-->
+						<li><a href="mailto: derekqxu@g.ucla.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+<!--					<ul class="copyright">-->
+<!--						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+<!--					</ul>-->
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
