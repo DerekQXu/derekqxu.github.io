@@ -1,212 +1,112 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Derek's Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<!-- Based on Strata by HTML5 UP (html5up.net), licensed under CCA 3.0. -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Derek Qiang Xu, Research Scientist at Meta. Research in foundation models, multimodal learning, efficient architectures, and reinforcement learning.">
+	<title>Derek Qiang Xu | Research Scientist at Meta</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/profile.css">
+</head>
+<body>
+	<header id="header">
+		<div class="inner">
+			<img class="image avatar" src="images/propic.jpg" alt="Derek Qiang Xu">
+			<h1>Derek Qiang Xu</h1>
+			<p>Research Scientist at Meta</p>
+			<nav id="contact" aria-label="Profile links">
+				<a href="mailto:derekqxu@gmail.com">Email</a>
+				<a href="https://www.linkedin.com/in/derekqxu/">LinkedIn</a>
+				<a href="https://github.com/DerekQXu">GitHub</a>
+			</nav>
+		</div>
+	</header>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/propic.jpg" alt="" /></a>
-					<h2>Derek Qiang Xu</h2>
-					<h4>Compute Science Ph.D. Student</h4>
-					<h5>University of California, Los Angeles</h5>
-				</div>
-			</header>
+	<main id="main">
+		<section id="one" aria-labelledby="about-heading">
+			<h2 id="about-heading">About</h2>
+			<p>Hi! I am a research scientist working at Meta ads ranking. I work on foundation model training, model scaling, and user modeling. I received my Ph.D. in Computer Science from <a href="https://samueli.ucla.edu/">UCLA</a>, advised by Professor <a href="https://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a> and Professor <a href="https://web.cs.ucla.edu/~weiwang/">Wei Wang</a>. My research interests include foundation models, multimodal learning, efficient architectures, and reinforcement learning. If you are also interested, feel free to reach out!</p>
+		</section>
 
-		<!-- Main -->
-			<div id="main">
+		<section id="two" aria-labelledby="publications-heading">
+			<h2 id="publications-heading">Selected Publications</h2>
+			<ul class="entries">
+				<li>
+					<h3><a href="https://www.nature.com/articles/s42256-025-01067-x">Designing metamaterials with programmable nonlinear responses and geometric constraints in graph space</a></h3>
+					<p class="entry-meta">Nature Machine Intelligence · 2025</p>
+					<p>Used reinforcement learning and tree search to design metamaterials with target mechanical responses.</p>
+				</li>
+				<li>
+					<h3><a href="https://iclr.cc/virtual/2025/poster/31124">Mixture of In-Context Prompters for Tabular PFNs</a></h3>
+					<p class="entry-meta">ICLR · 2025</p>
+					<p>Trained and routed specialized in-context learning experts to scale tabular foundation models to larger datasets.</p>
+				</li>
+				<li>
+					<h3><a href="https://doi.org/10.1145/3690624.3709262">Neural Network Pruning for Invariance Learning</a></h3>
+					<p class="entry-meta">KDD · 2025</p>
+					<p>Studied how pruning can uncover network structures that preserve learned invariances.</p>
+				</li>
+				<li>
+					<h3><a href="https://virtual2023.aclweb.org/paper_P5668.html">Introducing Semantics into Speech Encoders</a></h3>
+					<p class="entry-meta">ACL · 2023</p>
+					<p>Transferred semantic information from language models into speech encoders without labeled audio transcriptions.</p>
+				</li>
+				<li>
+					<h3><a href="https://arxiv.org/abs/2002.03129">GLSearch: Maximum Common Subgraph Detection via Learning to Search</a></h3>
+					<p class="entry-meta">ICML · 2021</p>
+					<p>Used a graph neural network and reinforcement learning to guide branch-and-bound search.</p>
+				</li>
+			</ul>
+		</section>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About Me</h2>
-						</header>
-						<p>Hi! My name is Derek.
-							I am currently a second-year Ph.D. student at the
-							University of California, Los Angeles (UCLA). My
-							advisors are Prof. <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a> and Prof. <a href="http://web.cs.ucla.edu/~weiwang/">Wei Wang</a>.
-							<br><br>
-							I am interested in machine learning and data mining on graphs,
-							particularly <i>graph representation learning</i>,
-							<i>generative modeling</i>, and <i>combinatorial search</i>.
-							If you are also interested in any of these topics and
-							wish to talk, please reach out to me!
-						</p>
-<!--						<ul class="actions">-->
-<!--							<li><a href="#" class="button">Learn More</a></li>-->
-<!--						</ul>-->
-					</section>
+		<section id="three" aria-labelledby="experience-heading">
+			<h2 id="experience-heading">Experience</h2>
+			<ul class="entries">
+				<li>
+					<h3>Meta Ads · Research Scientist</h3>
+					<p class="entry-meta">2025–present</p>
+					<p>Worked on foundation model training and scale-up.</p>
+				</li>
+				<li>
+					<h3>Amazon Web Services · Applied Scientist Intern</h3>
+					<p class="entry-meta">2024</p>
+					<p>Worked on post-training Chronos, a time-series foundation model.</p>
+				</li>
+				<li>
+					<h3>Uber AI · Research Engineer Intern</h3>
+					<p class="entry-meta">2023</p>
+					<p>Scaled TabPFN inference to larger tabular datasets.</p>
+				</li>
+				<li>
+					<h3>Meta Reality Labs · Research Scientist Intern</h3>
+					<p class="entry-meta">2022</p>
+					<p>Worked on aligning speech and language models using unlabeled data.</p>
+				</li>
+				<li>
+					<h3>Uber AI · Machine Learning Engineer Intern</h3>
+					<p class="entry-meta">2021</p>
+					<p>Developed scalable feature selection for ETA prediction.</p>
+				</li>
+				<li>
+					<h3>Uber · Software Engineering Intern</h3>
+					<p class="entry-meta">2020</p>
+					<p>Implemented pricing changes for Uber rides.</p>
+				</li>
+				<li>
+					<h3>NASA Jet Propulsion Laboratory · Software Engineering Intern</h3>
+					<p class="entry-meta">2018, 2019</p>
+					<p>Built tools to process and validate spacecraft commands.</p>
+				</li>
+			</ul>
+		</section>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Selected Projects</h2>
-						<div class="row">
-							<article class="work-item">
-								<h3>GLSearch: Unsupervised Maximum Common Subgraph Detection</h3>
-								<a href="images/glsearch.png"><img src="images/glsearch.png" alt="" /></a>
-								<p>
-								We propose GLSEARCH, a Graph Neural Net-
-								work (GNN) based learning to search model. Our
-								model is built upon the branch and bound algo-
-								rithm, which selects one pair of nodes from the
-								two input graphs to expand at a time. Instead of
-								using heuristics, we propose a novel GNN-based
-								Deep Q-Network (DQN), which leverages search
-								information and graph coarsening, to select the node pair,
-								making the search process faster and more adaptive.
-								We also leverage the search process to provide
-								supervision in a pre-training and imitation learning.
-								</p>
-								<p><i>Bai, Y.*, Xu, D.*, Sun, Y., & Wang, W. (2021, July). GLSearch: Maximum Common Subgraph Detection via Learning to Search. In International Conference on Machine Learning (pp. 588-598). PMLR.</i> <a href="https://arxiv.org/abs/2002.03129">[paper link]</a></p>
-							</article>
-							<article class="work-item">
-								<h3>NeuralMCS: Supervised Maximum Common Subgraph Detection</h3>
-								<a href="images/neuralmcs.png"><img src="images/neuralmcs.png" alt="" /></a>
-								<p>
-								We propose an efficient MCS detection algorithm, NeuralMCS,
-								consisting of a novel neural network model that learns the
-								node-node correspondence from the ground-truth MCS result,
-								and a subgraph extraction procedure that uses the neural
-								network output as guidance for final MCS prediction, with
-								a hierarchical loss function capturing equivalent ground
-								truths at different granularities.
-								</p>
-								<p><i>Bai, Y.*, Xu, D.*, Gu, K., Wu, X., Marinovic, A., Ro, C., Sun, Y., & Wang, W. (2019). Neural maximum common subgraph detection with guided subgraph extraction. <a href="https://openreview.net/forum?id=BJgcwh4FwS">[paper link]</a></i></p>
-							</article>
-							<article class="work-item">
-								<h3>Embedded Machine Learning on STM Sensortile</h3>
-								<a href="images/stm.png"><img src="images/stm.png" alt="" /></a>
-								<p>I designed and implemented a real-time motion recognition
-								system using CNNs and LSTMs to classify 9DOF signals, with
-								heavy data augmentation through additive Gaussian noise and
-								signal shifting. The system used BLE communication to relay
-								sensor data to compute resources, and digital signal
-								processing via band-pass filtering and boxcar smoothing to
-								clean raw data.</p>
-								<p><a href="https://sites.google.com/view/ucla-stmicroelectronics-iot/home">[Tutorials link]</a><a href="https://github.com/DerekQXu/General_Motion_Classifier_ML">[GitHub link]</a></p>
-							</article>
-						</div>
-					</section>
+		<section id="service" aria-labelledby="service-heading">
+			<h2 id="service-heading">Research Service</h2>
+			<p>Area chair for ICLR and ICML. Reviewer or program committee member for NeurIPS, AAAI, KDD, AISTATS, and ACL.</p>
+		</section>
 
-				<!-- Two -->
-					<section id="three">
-						<h2>Work Experience</h2>
-						<div class="row">
-							<article class="work-item">
-								<h3>Uber Technologies (Summer 2021)</h3>
-								<h4>Machine Learning Engineering Intern</h4>
-								<p>I worked on an information theoretic approach to AutoML, and implemented a functioning highly-scalable model and feature selection system that identified optimal geospatial features for production.</p>
-							</article>
-							<article class="work-item">
-								<h3>Uber Technologies (Summer 2020)</h3>
-								<h4>Software Engineering Intern</h4>
-								<p>I analyzed pricing policies with the data science team and implemented a new end-to-end product in Python, Java, Go, JS, and SQL.</p>
-							</article>
-							<article class="work-item">
-								<h3>NASA Jet Propulsion Laboratory (Summer 2019)</h3>
-								<h4>Software Engineering Intern</h4>
-								<p>I designed and developed a new programming language for compiling and verifying sattelite command files then ingesting them into a database.</p>
-							</article>
-							<article class="work-item">
-								<h3>NASA Jet Propulsion Laboratory (Summer 2018)</h3>
-								<h4>Software Engineering Intern</h4>
-								<p>I developed a reverse data compilation engine to verify data packets between mission control and satellites.</p>
-							</article>
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section id="four">
-						<h2>Teaching Experience</h2>
-						<div class="row">
-							<article class="work-item">
-								<h3>CS30: Introduction to Computer Science (Summer 2021)</h3>
-								<p>I set up the final project, a coding competition, covering various search algorithms: BFS, DFS, Best-First Search, Djikstra's, and A*.</p>
-							</article>
-							<article class="work-item">
-								<h3>E96C: Introduction to Engineering Design (2017-2020)</h3>
-								<p>I helped debug software and hardware errors for students developing an embedded machine learning motion recognition system.</p>
-							</article>
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section id="five">
-						<h2>Honors and Awards</h2>
-						<ul>
-							<li>NRT MENTOR Fellowship</li>
-							<li>KDD Student Travel Award</li>
-							<li>Kenneth I. Friedman Endowed Scholarship</li>
-							<li>NSF REU Program</li>
-							<li>1st Place UCLA Micromouse Internal</li>
-							<li>UPE and HKN Honor Societies</li>
-						</ul>
-					</section>
-
-				<!-- Three -->
-					<section id="six">
-						<h2>Contact</h2>
-						<div class="row">
-<!--							<div class="col-8 col-12-small">-->
-<!--								<form method="post" action="#">-->
-<!--									<div class="row gtr-uniform gtr-50">-->
-<!--										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>-->
-<!--										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>-->
-<!--										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>-->
-<!--									</div>-->
-<!--								</form>-->
-<!--								<ul class="actions">-->
-<!--									<li><input type="submit" value="Send Message" /></li>-->
-<!--								</ul>-->
-<!--							</div>-->
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										3551 Boelter Hall, UCLA, CA, 90095 (ScAI lab)
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">derekqxu@g.ucla.edu</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-<!--						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
-						<li><a href="https://github.com/DerekQXu" class="icon brands fa-github"><span class="label">Github</span></a></li>
-<!--						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>-->
-						<li><a href="mailto: derekqxu@g.ucla.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-<!--					<ul class="copyright">-->
-<!--						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
-<!--					</ul>-->
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+		<footer class="site-credit">Design based on <a href="https://html5up.net/strata">Strata by HTML5 UP</a>.</footer>
+	</main>
+</body>
 </html>
