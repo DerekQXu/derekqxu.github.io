@@ -89,3 +89,20 @@ a:focus-visible {
 		justify-content: center;
 	}
 }
+
+.publication-figure {
+	display: block;
+	width: fit-content;
+	max-width: min(100%, 28rem);
+	margin-top: 0.75em;
+	border: 1px solid #e5e9eb;
+	border-radius: 0.35em;
+	background: #fff;
+}
+
+.publication-figure img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-radius: inherit;
+}
